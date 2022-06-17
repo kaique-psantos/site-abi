@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site construído para avalição na disciplina de Introdução à Web do Centro Universitário - UniRios">
+    <meta name="keywords" content="afoxe, cultura, cultura negra, resistencia, ufal, sertao">
+    <title>Abí Axé Egbé</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="shortcut icon" href="../../imagens/logo.png" type="image/x-icon">
+    
+    <script src="../../js/funcoes.js"></script>
+    <script src="../../js/jquery-3.6.0.js"></script>
+
+    <script>
+    $(document).ready(function () {
+        var cabecalho = document.getElementById('cabecalho'); 
+        window.addEventListener('scroll', function () {
+        if (window.scrollY > 150) cabecalho.classList.add('cabecalho-scroll'); 
+        else cabecalho.classList.remove('cabecalho-scroll');
+        });
+    })();
+    </script>
+
+
+    
+</head>
+
+<body>
+    <main>
+    <header id="cabecalho">
+        <div class="container">
+            <a href="../../index.html">
+                <img src="../../imagens/logo.png" id="logo">
+            </a>
+            <nav id="menu">
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="#">Formação</a></li>
+                    <li class="series"><a href="#">Séries</a>
+                        <ul class="series">
+                            <li><a href="../sextou.html">Sextou com o Abí</a></li>
+                            <li><a href="#">Para pensar (#)</a></li>
+                            <li><a href="#">Dicas de Leitura (#)</a></li>
+                            <li><a href="#">Memórias do Abí (#)</a></li>
+                            <li><a href="#">Racismo (#)</a></li>
+                            <li><a href="#">Lives (#)</a></li>
+                            <li><a href="#">Histórias de Axé (#)</a></li>
+                            </ul>
+                    </li>
+                    <li><a href="../galeria.html">Galeria</a></li>
+                    <li><a href="internas/coordenacao.html">Coordenação</a></li> 
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="capa">
+        <img src="../../imagens/internas/galeria/capa.jpg" alt="">
+    </div>
+
+    <div id="resumo">
+        <h1>Café com Canela</h1>
+        <img src="../../imagens/internas/sextou/cafe-com-canela.jpg" alt="">
+        <p>Produzido em 2017 no recôncavo baiano e dirigido por Glenda Nicácio e Ary Rosa, "Café com Canela" é uma produção de representatividades e afeto. O cenário que mostra a estética da negritude, elementos do cotidiano popular do interior baiano, referências das religiões de matriz afro brasileiras, memórias intimas e a força da mulher negra constituem a narrativa. Com a morte do filho, Margarida (Valdinéia Soriano) se isola e vive com a dor da perda e com as memórias de um tempo que passou. Já Violeta (Aline Brune), segue a vida entre as adversidades do dia a dia e traumas do passado. Essas duas mulheres nos mostram como os encontros e reencontros que a vida possibilita são capazes de aguçar processos lindos de transformação e libertação entre conversas, afetos, faxinas e cafés com canela.</p>
+    </div>
+
+    <div id="trailer">
+        <h3>Trailer:</h3>
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VuOQXpKsw1k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Filme completo disponivel na <a href="https://www.primevideo.com/dp/amzn1.dv.gti.b6b62209-50ad-9db6-899c-aedacd84c911?autoplay=1&ref_=atv_cf_strg_wb">Prime Video</a></p>
+    </div>
+
+
+
+
+
+
+    
+    <footer id="rodape">
+        <div>
+            <a href="#"><img src="../../imagens/logo.png" class="logo-rodape" alt=""></a>
+            <a href="https://ufal.br/" target="_blank"><img src="../../imagens/brasao-ufal.png" class="brasao-rodape" alt=""></a>
+            <p>Equipamento Cultural Grupo de Cultura Negra do Sertão Abí Axé Egbé</p>
+            <p>Pró-Reitoria de Extenção</p>
+            <p>Universidade Federal de Alagoas - UFAL</p>
+        </div>
+        <div class="contate-nos">
+            <p>Contate-nos: 
+                <a href="mailto:abiaxeegbeufal@gmail.com?">abiaxeegbeufal@gmail.com</a>
+            </p>
+    
+            <p>Projeto apresentado como pré-requisito para aprovação na disciplina de Introdução à Tecnológia Web do curso de Sistema de Informação
+                <br>Centro Universitário do Rio São Francisco - UniRios
+                <br>Desenvolvido por: Kaíque Pereira dos Santos 
+            </p>
+        </div>
+    </footer>
+
+   </main>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Site construído para avalição na disciplina de Introdução à Web do Centro Universitário - UniRios">
+    <meta name="keywords" content="afoxe, cultura, cultura negra, resistencia, ufal, sertao">
+    <title>Abí Axé Egbé</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../imagens/logo.png" type="image/x-icon">
+
+    <script src="../js/funcoes.js"></script>
+    <script src="../js/jquery-3.6.0.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var cabecalho = document.getElementById('cabecalho');
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 150) cabecalho.classList.add('cabecalho-scroll');
+                else cabecalho.classList.remove('cabecalho-scroll');
+            });
+        })();
+    </script>
+
+
+
+</head>
+
+<body>
+    <main>
+        <header id="cabecalho">
+            <div class="container">
+                <a href="../index.html">
+                    <img src="../imagens/logo.png" id="logo">
+                </a>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="formacao.html">Formação</a></li>
+                        <li class="series"><a href="#">Séries</a>
+                            <ul class="series">
+                                <li><a href="construcao.html" target="_blank">Para pensar (#)</a></li>
+                                <li><a href="construcao.html" target="_blank">Dicas de Leitura (#)</a></li>
+                                <li><a href="construcao.html" target="_blank">Memórias do Abí (#)</a></li>
+                                <li><a href="construcao.html" target="_blank">Racismo (#)</a></li>
+                                <li><a href="construcao.html" target="_blank">Lives (#)</a></li>
+                                <li><a href="construcao.html" target="_blank">Histórias de Axé (#)</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="#">Coordenação</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+
+
+
+
+        <div id="capa">
+            <img src="../imagens/internas/galeria/capa.jpg" alt="">
+        </div>
+
+
+        <!-- <section id="coordenacao">
+            <h1>Coordenação</h1>
+            
+        </section> -->
+        <div id="geral-diretoria" class="container">
+            <h2>Coordenação</h2>
+            <div id="diretoria">
+                <div class="coord-interna">
+                    <img src="../imagens/internas/coordenacao/gustavo.jpg" alt="">
+                    <h4>Prof. Dr. Gustavo Gomes</h4>
+                    <p>Diretor</p>
+                </div>
+                <div class="coord-interna">
+                    <img src="../imagens/internas/coordenacao/ellen.jpg" alt="">
+                    <h4>Profª. Me. Ellen Cirilo</h4>
+                    <p>Secretária</p>
+                </div>
+                <div class="coord-interna">
+                    <img src="../imagens/internas/coordenacao/raylane.jpg" alt="">
+                    <h4>Raylane Carvalho</h4>
+                    <p>Secretária</p>
+                </div>
+                <div class="coord-interna">
+                    <img src="../imagens/internas/coordenacao/maria-helena.jpg" alt="">
+                    <h4>Maria Helena dos Santos</h4>
+                    <p>Coordenadora de Relações<br>Institucionais</p>
+                </div>
+                <div class="coord-interna">
+                    <img src="../imagens/internas/coordenacao/alice.jpg" alt="">
+                    <h4>Alice Mendes</h4>
+                    <p>Coordenadora da Comunicação</p>
+                </div>
+                <div class="coord-interna">
+                    <img src="../imagens/internas/coordenacao/luciana.jpg" alt="">
+                    <h4>Luciana Juvêncio</h4>
+                    <p>Coordenadora da Comunicação</p>
+                </div>
+                <div class="coord-interna">
+                    <img src="../imagens/internas/coordenacao/ryclesia.jpg" alt="">
+                    <h4>Ryclesia Carvalho</h4>
+                    <p>Coordenadora da Dança</p>
+                </div>
+                <div class="coord-interna">
+                    <img src="../imagens/internas/coordenacao/tiego.jpg" alt="">
+                    <h4>Tiego </h4>
+                    <p>Coordenador do Canto</p>
+                </div>
+                <div class="coord-interna">
+                    <img src="../imagens/internas/coordenacao/jeferson.jpg" alt="">
+                    <h4>Jeferson </h4>
+                    <p>Coordenador da Estetica</p>
+                </div>
+                <div class="coord-interna">
+                    <img src="../imagens/internas/coordenacao/lucas.jpg" alt="">
+                    <h4>Lucas</h4>
+                    <p>Coordenador da Percursão</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <footer id="rodape">
+            <div>
+                <a href="#"><img src="../imagens/logo.png" class="logo-rodape" alt=""></a>
+                <a href="https://ufal.br/" target="_blank"><img src="../imagens/brasao-ufal.png" class="brasao-rodape"
+                        alt=""></a>
+                <p>Equipamento Cultural Grupo de Cultura Negra do Sertão Abí Axé Egbé</p>
+                <p>Pró-Reitoria de Extenção</p>
+                <p>Universidade Federal de Alagoas - UFAL</p>
+            </div>
+            <div class="contate-nos">
+                <p>Contate-nos:
+                    <a href="mailto:abiaxeegbeufal@gmail.com?">abiaxeegbeufal@gmail.com</a>
+                </p>
+
+                <p>Projeto apresentado como pré-requisito para aprovação na disciplina de Introdução à Tecnológia Web do
+                    curso de Sistema de Informação
+                    <br>Centro Universitário do Rio São Francisco - UniRios
+                    <br>Desenvolvido por: Kaíque Pereira dos Santos
+                </p>
+            </div>
+        </footer>
+
+
+
+
+    </main>
+</body>

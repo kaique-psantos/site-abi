@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Site construído para avalição na disciplina de Introdução à Web do Centro Universitário - UniRios">
+    <meta name="keywords" content="afoxe, cultura, cultura negra, resistencia, ufal, sertao">
+    <title>Abí Axé Egbé</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../imagens/logo.png" type="image/x-icon">
+
+    <script src="../js/funcoes.js"></script>
+    <link rel="stylesheet" href="../js/plugins/magnific-popup.css">
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="../js/plugins/jquery.magnific-popup.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var cabecalho = document.getElementById('cabecalho');
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 150) cabecalho.classList.add('cabecalho-scroll');
+                else cabecalho.classList.remove('cabecalho-scroll');
+            });
+        })();
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#galeria-fotos').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: true,
+                    titleSrc: function (item) {
+                        return item.el.attr('title');
+                    }
+                },
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300, // don't foget to change the duration also in CSS
+                    opener: function (element) {
+                        return element.find('img');
+                    }
+                }
+
+            });
+        });
+    </script>
+
+
+
+</head>
+
+<body>
+    <main>
+        <header id="cabecalho">
+            <div class="container">
+                <a href="../index.html">
+                    <img src="../imagens/logo.png" id="logo">
+                </a>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="formacao.html">Formação</a></li>
+                        <li class="series"><a href="#">Séries</a>
+                            <ul class="series">
+                                <li><a href="sextou.html">Sextou com o Abí</a></li>
+                                <li><a href="construcao.html" target="_blank">Para pensar (#)</a></li>
+                                <li><a href="construcao.html" target="_blank">Dicas de Leitura (#)</a></li>
+                                <li><a href="construcao.html" target="_blank">Memórias do Abí (#)</a></li>
+                                <li><a href="construcao.html" target="_blank">Racismo (#)</a></li>
+                                <li><a href="construcao.html" target="_blank">Lives (#)</a></li>
+                                <li><a href="construcao.html" target="_blank">Histórias de Axé (#)</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Galeria</a></li>
+                        <li><a href="coordenacao.html">Coordenação</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+
+
+
+
+        <div id="capa">
+            <img src="../imagens/internas/galeria/capa.jpg" alt="">
+        </div>
+
+
+        <section id="fotos">
+            <h1>GALERIA</h1>
+            <div>
+                <div id="galeria-fotos">
+                    <a href="../imagens/internas/galeria/1.jpg" title="Cortejo de Carnaval - 2020"><img
+                            src="../imagens/internas/galeria/1.jpg" alt=""></a>
+                    <a href="../imagens/internas/galeria/2.jpg" title="Cortejo de Carnaval - 2020"><img
+                            src="../imagens/internas/galeria/2.jpg" alt=""></a>
+                    <a href="../imagens/internas/galeria/3.jpg" title="Cortejo de Carnaval - 2020"><img
+                            src="../imagens/internas/galeria/3.jpg" alt=""></a>
+                    <a href="../imagens/internas/galeria/4.jpg" title="Cortejo de Carnaval - 2020"><img
+                            src="../imagens/internas/galeria/4.jpg" alt=""></a>
+
+                    <a href="../imagens/internas/galeria/5.jpg" title="1º Encontro das Tradições"><img
+                            src="../imagens/internas/galeria/5.jpg" alt=""></a>
+                    <a href="../imagens/internas/galeria/6.jpg" title="1º Encontro das Tradições"><img
+                            src="../imagens/internas/galeria/6.jpg" alt=""></a>
+                    <a href="../imagens/internas/galeria/7.jpg" title="1º Encontro das Tradições"><img
+                            src="../imagens/internas/galeria/7.jpg" alt=""></a>
+                    <a href="../imagens/internas/galeria/8.jpg" title="1º Encontro das Tradições"><img
+                            src="../imagens/internas/galeria/8.jpg" alt=""></a>
+
+                    <a href="../imagens/internas/galeria/9.jpg"
+                        title="Lançamento do Livro: Ser(tão) Negro com o Abí Axé Egbé"><img
+                            src="../imagens/internas/galeria/9.jpg" alt=""></a>
+                    <a href="../imagens/internas/galeria/10.jpg"
+                        title="Lançamento do Livro: Ser(tão) Negro com o Abí Axé Egbé"><img
+                            src="../imagens/internas/galeria/10.jpg" alt=""></a>
+                    <a href="../imagens/internas/galeria/11.jpg"
+                        title="Lançamento do Livro: Ser(tão) Negro com o Abí Axé Egbé"><img
+                            src="../imagens/internas/galeria/11.jpg" alt=""></a>
+                    <a href="../imagens/internas/galeria/12.jpg"
+                        title="Lançamento do Livro: Ser(tão) Negro com o Abí Axé Egbé"><img
+                            src="../imagens/internas/galeria/12.jpg" alt=""></a>
+
+                    <a href="../imagens/internas/galeria/13.jpg" title="Cortejo de Carnaval - 2019"><img
+                            src="../imagens/internas/galeria/13.jpg" alt=""></a>
+                    <a href="../imagens/internas/galeria/14.jpg" title="Cortejo de Carnaval - 2019"><img
+                            src="../imagens/internas/galeria/14.jpg" alt=""></a>
+                    <a href="../imagens/internas/galeria/15.jpg" title="Cortejo de Carnaval - 2019"><img
+                            src="../imagens/internas/galeria/15.jpg" alt=""></a>
+                    <a href="../imagens/internas/galeria/16.jpg" title="Cortejo de Carnaval - 2019"><img
+                            src="../imagens/internas/galeria/16.jpg" alt=""></a>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <footer id="rodape">
+            <div>
+                <a href="#"><img src="../imagens/logo.png" class="logo-rodape" alt=""></a>
+                <a href="https://ufal.br/" target="_blank"><img src="../imagens/brasao-ufal.png" class="brasao-rodape"
+                        alt=""></a>
+                <p>Equipamento Cultural Grupo de Cultura Negra do Sertão Abí Axé Egbé</p>
+                <p>Pró-Reitoria de Extenção</p>
+                <p>Universidade Federal de Alagoas - UFAL</p>
+            </div>
+            <div class="contate-nos">
+                <p>Contate-nos:
+                    <a href="mailto:abiaxeegbeufal@gmail.com?">abiaxeegbeufal@gmail.com</a>
+                </p>
+
+                <p>Projeto apresentado como pré-requisito para aprovação na disciplina de Introdução à Tecnológia Web do
+                    curso de Sistema de Informação
+                    <br>Centro Universitário do Rio São Francisco - UniRios
+                    <br>Desenvolvido por: Kaíque Pereira dos Santos
+                </p>
+            </div>
+        </footer>
+
+    </main>
+</body>
+
+</html>

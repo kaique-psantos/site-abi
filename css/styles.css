@@ -1,0 +1,514 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    /* --color-1:#40D0D0; */
+    --color-1: #00c4c4;
+    --color-2: yellow;
+    --color-3: rgb(22, 22, 255);
+    --color-4: rgb(255, 255, 92);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#cabecalho {
+    /* background-color: var(--color-1); */
+    top: 0;
+    position: fixed;
+    z-index: 30;
+    width: 100%;
+    transition: all 0.3s linear;
+}
+
+#cabecalho:hover {
+    background-color: var(--color-1);
+}
+
+/* SCROOL */
+.cabecalho-scroll {
+    position: fixed;
+    top: 0px;
+    background-color: var(--color-1);
+}
+
+
+#cabecalho .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+
+}
+
+#cabecalho #logo {
+    display: block;
+    width: 60px;
+    transition: all 0.1s linear;
+}
+
+#cabecalho #logo:hover {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+#cabecalho #menu li {
+    display: inline-block;
+    position: relative;
+}
+
+/* ocultar segunda */
+#cabecalho #menu li ul {
+    display: none;
+    position: absolute;
+    background-color: var(--color-1);
+    width: 100%;
+}
+
+/* edita  os nomes do menu */
+#cabecalho #menu li a {
+    text-decoration: none;
+    display: block;
+    padding: 15px 30px;
+    transition: all 0.3s linear;
+    color: white;
+}
+
+#cabecalho #menu li a:hover {
+    background-color: var(--color-2);
+    color: blue;
+}
+
+/* faz a segunda lista aparecer */
+#cabecalho #menu li:hover ul {
+    display: block;
+}
+
+/* Faz l1 do elemento ficar um abaixo do outro (bloco) e alinhado */
+#cabecalho #menu li ul li {
+    display: block;
+    z-index: 3;
+}
+
+/* Formatação do link do submenu */
+#cabecalho #menu li ul li a {
+    border-bottom: 1px solid var(--color-3);
+    /*linha separado os itens*/
+}
+
+/* Faz link do submenu mudar de cor */
+#cabecalho #menu li ul li a:hover {
+    background-color: var(--color-2);
+}
+
+/* Faz o menu "series redimensionar o tamanho quando :hover" */
+#cabecalho .series {
+    transition: all 0.3s linear;
+}
+
+#cabecalho .series:hover {
+    width: 180px;
+}
+
+
+
+/* Centraliza o titulo em cima do slide de forma "gambiarra" */
+#titulo {
+    position: absolute;
+    z-index: 25;
+    margin-left: 270px;
+    margin-top: 270px;
+}
+
+#titulo h1 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+/* define a prioridade do slider */
+#slider {
+    z-index: 20;
+}
+
+/* CORPO */
+
+#about {
+    text-align: left;
+    display: block;
+    margin-bottom: 350px;
+}
+
+#about h1 {
+    padding-bottom: 20px;
+}
+
+#about p {
+    padding-bottom: 20px;
+    text-align: justify;
+    float: left;
+    width: 50%;
+}
+
+/* edita a a frase "Sobre nós" */
+#about .sobre {
+    color: rgb(97, 97, 97);
+    padding-bottom: 0;
+}
+
+/* edita o video do sobre */
+#about .video-sobre {
+    width: 498px;
+    height: 280px;
+    float: right;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 30px;
+    display: block;
+    padding-bottom: 20px;
+}
+
+/* edita o botão saiba mais do sobre */
+#about a {
+    display: block;
+    text-decoration: none;
+    background-color: var(--color-1);
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+    width: 80px;
+    border: 1px solid var(--color-1);
+    border-radius: 10px;
+    transition: all 0.2s linear;
+}
+
+#about a:hover {
+    background-color: var(--color-2);
+    border-color: var(--color-2);
+    color: blue;
+}
+
+
+
+/* DOCUMENTÁRIO */
+#documentario {
+    padding-bottom: 5px;
+    display: block;
+    background-color: rgb(235, 235, 235);
+}
+
+#documentario h2 {
+    padding-top: 20px;
+    text-align: center;
+}
+
+#documentario p {
+    padding: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+    text-align: justify;
+}
+
+/* edita a div onde ta os videos do documentário */
+#documentario .video-documentario {
+    align-items: center;
+    display: grid;
+    margin-block-start: 30px;
+    grid-template-columns: repeat(3, auto);
+}
+
+/* edita os videos do dumentario */
+#documentario iframe {
+    width: 320px;
+    height: 180px;
+
+}
+
+/* edita o primeiro video do cocumentário */
+#documentario .primeiro {
+    margin-left: 90px;
+}
+
+/* edita o botão do youtube */
+#documentario a {
+    text-decoration: none;
+    width: 160px;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    margin: 20px auto;
+    transition: all 0.2s linear;
+}
+
+#documentario a:hover {
+    background-color: rgb(219, 0, 0);
+}
+
+
+
+
+#geral-diretoria {
+    padding-bottom: 30px;
+}
+
+#geral-diretoria h2 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 35px;
+}
+
+/* edita o botão "conheça nossos coordenadores" */
+#geral-diretoria a {
+    display: block;
+    background-color: #00cece;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    width: 180px;
+    border-radius: 10px;
+    padding: 10px 0;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.2s linear;
+}
+
+#geral-diretoria a:hover {
+    background-color: var(--color-2);
+    color: blue;
+}
+
+#diretoria {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 90px;
+    text-align: center;
+    margin-left: -40px;
+}
+
+
+
+#diretoria img {
+    width: 250px;
+}
+
+#diretoria .coord-interna img {
+    width: 225px;
+}
+
+
+
+
+
+
+/* RODAPÉ */
+#rodape {
+    background-color: rgb(223, 223, 223);
+    margin-top: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* edita a logo do abí */
+#rodape .logo-rodape {
+    width: 70px;
+    margin-right: 5px;
+}
+
+/* edita a logo da ufal */
+#rodape .brasao-rodape {
+    width: 30px;
+    margin-left: 5px;
+}
+
+/* edita a parte do email */
+#rodape .contate-nos p {
+    font-size: 15px;
+    margin-top: 10px;
+    color: rgb(66, 66, 66);
+}
+
+#rodape .contate-nos a {
+    text-decoration: none;
+}
+
+#rodape .contate-nos a:hover {
+    text-decoration: underline;
+}
+
+
+/* INTERNAS */
+
+/* CAPA DE TODAS AS INTERNAS */
+#capa img {
+    width: 100%;
+}
+
+/* EDITA A GALERIA */
+#fotos {
+    padding: 0 60px;
+    padding-bottom: 30px;
+}
+
+#fotos h1 {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 35px;
+}
+
+#fotos #galeria-fotos {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 20px;
+}
+
+#fotos #galeria-fotos img {
+    display: block;
+    width: 100%;
+    transition: all 0.2s linear;
+}
+
+#fotos #galeria-fotos img:hover {
+    transform: scale(1.05);
+}
+
+/* EDITA A PAGINA DA COORDENAÇÃO */
+#coordenacao {
+    padding: 0 60px;
+    padding-bottom: 30px;
+}
+
+#coordenacao h1 {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 35px;
+}
+
+#page-diretoria {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 90px;
+    text-align: center;
+}
+
+#sextou {
+    margin-bottom: 40px;
+}
+
+#sextou a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s linear;
+}
+
+#sextou a:hover {
+    text-decoration: underline;
+}
+
+#sextou h2 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 30px;
+}
+
+#sextou .sobre-serie {
+    text-align: center;
+    color: 999;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+#sextou #filmes {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 30px;
+    text-align: center;
+}
+
+#sextou #filmes img {
+    width: 200px;
+}
+
+
+#resumo {
+    margin: 20px 300px;
+}
+
+#resumo h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#resumo p {
+    text-align: justify;
+
+}
+
+#resumo img {
+    width: 200px;
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+#trailer {
+    text-align: center;
+    margin: 50px 0;
+
+}
+
+
+#formacao h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#formacao h4,
+#formacao h3 {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+#formacao p {
+    text-align: justify;
+    margin: 0 25px;
+    padding-bottom: 20px;
+}
+
+#cronograma {
+    margin: 30px 25px;
+}
+
+
+#tabela tr td {
+    padding: 10px;
+}
+
+#formacao a {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--color-1);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.2s linear;
+}
+
+#formacao a:hover {
+    background-color: var(--color-2);
+    color: blue;
+}

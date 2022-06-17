@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site construído para avalição na disciplina de Introdução à Web do Centro Universitário - UniRios">
+    <meta name="keywords" content="afoxe, cultura, cultura negra, resistencia, ufal, sertao">
+    <title>Abí Axé Egbé</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="shortcut icon" href="../../imagens/logo.png" type="image/x-icon">
+    
+    <script src="../../js/funcoes.js"></script>
+    <script src="../../js/jquery-3.6.0.js"></script>
+
+    <script>
+    $(document).ready(function () {
+        var cabecalho = document.getElementById('cabecalho'); 
+        window.addEventListener('scroll', function () {
+        if (window.scrollY > 150) cabecalho.classList.add('cabecalho-scroll'); 
+        else cabecalho.classList.remove('cabecalho-scroll');
+        });
+    })();
+    </script>
+
+
+    
+</head>
+
+<body>
+    <main>
+    <header id="cabecalho">
+        <div class="container">
+            <a href="../../index.html">
+                <img src="../../imagens/logo.png" id="logo">
+            </a>
+            <nav id="menu">
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="#">Formação</a></li>
+                    <li class="series"><a href="#">Séries</a>
+                        <ul class="series">
+                            <li><a href="../sextou.html">Sextou com o Abí</a></li>
+                            <li><a href="#">Para pensar (#)</a></li>
+                            <li><a href="#">Dicas de Leitura (#)</a></li>
+                            <li><a href="#">Memórias do Abí (#)</a></li>
+                            <li><a href="#">Racismo (#)</a></li>
+                            <li><a href="#">Lives (#)</a></li>
+                            <li><a href="#">Histórias de Axé (#)</a></li>
+                            </ul>
+                    </li>
+                    <li><a href="../galeria.html">Galeria</a></li>
+                    <li><a href="internas/coordenacao.html">Coordenação</a></li> 
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="capa">
+        <img src="../../imagens/internas/galeria/capa.jpg" alt="">
+    </div>
+
+    <div id="resumo">
+        <h1>Café com Canela</h1>
+        <img src="../../imagens/internas/sextou/homecoming.jpg" alt="">
+        <p>Lançado em 2019, dirigido, produzido e escrito pela própria Beyoncé, "Homecoming" é um documentário sobre o seu show em Coachella no ano de 2018. Esse show teve a intencionalidade de levar a cultura negra para aquele palco que nunca havia antes tido como atração principal uma cantora negra, bem como mostrar a negritude, empoderamento e proporcionar um espaço de representatividades. Para isso, Beyoncé inspirou-se nas confraternizações de alunos e ex-alunos de universidades historicamente negras nos Estados Unidos. Essa produção também estabelece questões de ancestralidades tanto por meio dos figurinos utilizados, quanto pelas frases de pessoas negras que marcaram o movimento negro. O documentário mostra muito da apresentação no festival, como também mostra humanidade, dedicação, sensibilidade e cuidado em todo o processo de preparação e execução do show. O trabalho em torno do reconhecimento, valorização e auto afirmação da Beyoncé começou antes mesmo deste documentário, o lançamento do album "Lemonade" que trouxe músicas que falam sobre a solidão da mulher negra marcam essa construção.</p>
+    </div>
+
+    <div id="trailer">
+        <h3>Trailer:</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pU5X7GshEnI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Filme completo disponivel na <a href="https://www.netflix.com/watch/81013626?source=35">Netflix</a> </p>
+    </div>
+
+
+
+
+
+
+    
+    <footer id="rodape">
+        <div>
+            <a href="#"><img src="../../imagens/logo.png" class="logo-rodape" alt=""></a>
+            <a href="https://ufal.br/" target="_blank"><img src="../../imagens/brasao-ufal.png" class="brasao-rodape" alt=""></a>
+            <p>Equipamento Cultural Grupo de Cultura Negra do Sertão Abí Axé Egbé</p>
+            <p>Pró-Reitoria de Extenção</p>
+            <p>Universidade Federal de Alagoas - UFAL</p>
+        </div>
+        <div class="contate-nos">
+            <p>Contate-nos: 
+                <a href="mailto:abiaxeegbeufal@gmail.com?">abiaxeegbeufal@gmail.com</a>
+            </p>
+    
+            <p>Projeto apresentado como pré-requisito para aprovação na disciplina de Introdução à Tecnológia Web do curso de Sistema de Informação
+                <br>Centro Universitário do Rio São Francisco - UniRios
+                <br>Desenvolvido por: Kaíque Pereira dos Santos 
+            </p>
+        </div>
+    </footer>
+
+   </main>
+</body>
+</html>

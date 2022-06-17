@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Site construído para avalição na disciplina de Introdução à Web do Centro Universitário - UniRios">
+    <meta name="keywords" content="afoxe, cultura, cultura negra, resistencia, ufal, sertao">
+    <title>Abí Axé Egbé</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../imagens/logo.png" type="image/x-icon">
+
+    <script src="../js/funcoes.js"></script>
+    <script src="../js/jquery-3.6.0.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var cabecalho = document.getElementById('cabecalho');
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 150) cabecalho.classList.add('cabecalho-scroll');
+                else cabecalho.classList.remove('cabecalho-scroll');
+            });
+        })();
+    </script>
+
+
+
+</head>
+
+<body>
+    <main>
+        <header id="cabecalho">
+            <div class="container">
+                <a href="../index.html">
+                    <img src="../imagens/logo.png" id="logo">
+                </a>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="#">Formação</a></li>
+                        <li class="series"><a href="#">Séries</a>
+                            <ul class="series">
+                                <li><a href="sextou.html">Sextou com o Abí</a></li>
+                                <li><a href="construcao.html" target="_blank">Para pensar (#)</a></li>
+                                <li><a href="construcao.html" target="_blank">Dicas de Leitura (#)</a></li>
+                                <li><a href="construcao.html" target="_blank">Memórias do Abí (#)</a></li>
+                                <li><a href="construcao.html" target="_blank">Racismo (#)</a></li>
+                                <li><a href="construcao.html" target="_blank">Lives (#)</a></li>
+                                <li><a href="construcao.html" target="_blank">Histórias de Axé (#)</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="coordenacao.html">Coordenação</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+
+
+        <div id="capa">
+            <img src="../imagens/internas/galeria/capa.jpg" alt="">
+        </div>
+
+
+
+        <div id="sextou" class="container">
+            <h2>#SextoucomAbíAxé</h2>
+            <p class="sobre-serie">O #SextoucomAbíAxé foi uma série criada no ano de 2020 duranate a pandemia, onde
+                indicavamos filmes com tematicas sociais importântes. Desenvolvida inicialmente para o instagram, agora
+                você tem acesso a todos as nossas postagens diretamente pelo nosso site. Divirta-se com essas indicações
+            </p>
+            <div id="filmes">
+                <div>
+                    <a href="sextou/cafecomcanela.html">
+                        <img src="../imagens/internas/sextou/cafe-com-canela.jpg" alt="">
+                        <h4>Café com canela</h4>
+                    </a>
+                </div>
+                <div>
+                    <a href="sextou/homecoming.html">
+                        <img src="../imagens/internas/sextou/homecoming.jpg" alt="">
+                        <h4>Homecoming a film<br>by Beyoncé</h4>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="../imagens/modelo.gif" alt="">
+                        <h4>A lição de Moremi</h4>
+                    </a>
+
+                </div>
+                <div>
+                    <a href="">
+                        <img src="../imagens/modelo.gif" alt="">
+                        <h4>Titulo do filme</h4>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="../imagens/modelo.gif" alt="">
+                        <h4>Titulo do filme</h4>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="../imagens/modelo.gif" alt="">
+                        <h4>Titulo do filme</h4>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="../imagens/modelo.gif" alt="">
+                        <h4>Titulo do filme</h4>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="../imagens/modelo.gif" alt="">
+                        <h4>Titulo do filme</h4>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="../imagens/modelo.gif" alt="">
+                        <h4>Titulo do filme</h4>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="../imagens/modelo.gif" alt="">
+                        <h4>Titulo do filme</h4>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="../imagens/modelo.gif" alt="">
+                        <h4>Titulo do filme</h4>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="../imagens/modelo.gif" alt="">
+                        <h4>Titulo do filme</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer id="rodape">
+            <div>
+                <a href="#"><img src="../imagens/logo.png" class="logo-rodape" alt=""></a>
+                <a href="https://ufal.br/" target="_blank"><img src="../imagens/brasao-ufal.png" class="brasao-rodape"
+                        alt=""></a>
+                <p>Equipamento Cultural Grupo de Cultura Negra do Sertão Abí Axé Egbé</p>
+                <p>Pró-Reitoria de Extenção</p>
+                <p>Universidade Federal de Alagoas - UFAL</p>
+            </div>
+            <div class="contate-nos">
+                <p>Contate-nos:
+                    <a href="mailto:abiaxeegbeufal@gmail.com?">abiaxeegbeufal@gmail.com</a>
+                </p>
+
+                <p>Projeto apresentado como pré-requisito para aprovação na disciplina de Introdução à Tecnológia Web do
+                    curso de Sistema de Informação
+                    <br>Centro Universitário do Rio São Francisco - UniRios
+                    <br>Desenvolvido por: Kaíque Pereira dos Santos
+                </p>
+            </div>
+        </footer>
+
+    </main>
+</body>
+
+</html>
